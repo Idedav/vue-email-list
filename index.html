@@ -16,9 +16,8 @@
     <div id="app">
         <div class="container my-5">
             <h1>Emails:</h1>
-            <ol>
-                <li v-if="emails.length > 9"
-                v-for="email in emails">
+            <ol v-if="emails.length === item">
+                <li v-for="email in emails">
                     {{ email }}
                 </li>
             </ol>
