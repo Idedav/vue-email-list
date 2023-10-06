@@ -15,8 +15,8 @@ createApp({
                     this.emails.push(email.data.response)
                 })
             }
-
         }
+        
     },
 
     mounted(){
