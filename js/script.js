@@ -21,7 +21,9 @@ createApp({
     },
 
     mounted(){
-        this.getApi();
+        setTimeout(()=>{
+            this.getApi();
+        },2000)
         console.log(this.emails);
     }
 }).mount('#app')

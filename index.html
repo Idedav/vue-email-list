@@ -10,18 +10,22 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- AXIOS -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div id="app">
-        <div class="container my-5">
+        <div class="container my-5 text-center">
             <h1>Emails:</h1>
-            <ol v-if="emails.length === item">
+            <ol  class="list-unstyled"
+            v-if="emails.length === item">
                 <li v-for="email in emails">
                     {{ email }}
                 </li>
             </ol>
-        </div>
+            <div v-else 
+            class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
